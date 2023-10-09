@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+}
+:host nav ul {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+}
+
+:host a {
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+}
+:host a::after {
+  width: 0;
+  height: 2px;
+  content: '';
+  display: block;
+  background: #000;
+  transition: width 0.3s;
+}
+
+:host a:hover::after {
+  width: 100%;
+}
