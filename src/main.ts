@@ -5,21 +5,23 @@ import './parts'
 
 const http = new HttpClient()
 
+const base = import.meta.env.APP_URL_BASE
+
 const router = createRouter({
   routes: [
     {
-      path: '/',
+      path: `${base}/`,
       component: HomePageElement,
     },
     {
-      path: '/products',
+      path: `${base}/products`,
       component: ProductsPageElement,
       async loader(params) {
         return http.get('https://dummyjson.com/products', {params})
       },
     },
     {
-      path: '/contact',
+      path: `${base}/contact`,
       component: ContactPageElement,
     },
   ],
