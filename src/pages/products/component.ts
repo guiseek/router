@@ -3,6 +3,7 @@ import {Product, ProductResponse} from './interfaces'
 import template from './template.html?raw'
 
 const currency = Intl.NumberFormat('pt-BR', {
+  style: 'currency',
   currency: 'BRL',
 })
 
@@ -18,7 +19,11 @@ export class ProductItemElement extends PartElement {
   connectedCallback() {
     if (this.product) {
       const {title, price} = this.product
-      const children = [new Text(title), new Text(currency.format(price))]
+      const children = [
+        new Text(currency.format(price)),
+        new Text(' - '),
+        new Text(title),
+      ]
       this.getShadow().append(...children)
     }
   }
