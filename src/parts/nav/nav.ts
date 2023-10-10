@@ -1,6 +1,6 @@
 import {Part, PartElement} from '../../core'
-import template from './template.html?raw'
-import styles from './stylesheet.css?raw'
+import template from './nav.html?raw'
+import styles from './nav.css?raw'
 
 const selector = 'nav-menu'
 

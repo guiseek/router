@@ -1,1 +1,2 @@
-export * from './nav/component';
+export * from './links/links';
+export * from './nav/nav';
