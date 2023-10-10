@@ -10,3 +10,4 @@ declare module '*.css' {
 }
 
 declare const root: HTMLDivElement
+declare const loading: HTMLParagraphElement

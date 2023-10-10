@@ -1,18 +1,26 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/ts.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navigation API</title>
-  </head>
-  <body>
-    <header>
-      <nav-menu></nav-menu>
-    </header>
-    
-    <div id="root"></div>
 
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/ts.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navigation API</title>
+</head>
+
+<body>
+  <header>
+    <h1>Site</h1>
+    <nav-menu></nav-menu>
+  </header>
+
+  <hr />
+
+  <p id="loading" hidden>Carregando...</p>
+
+  <main id="root"></main>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>

@@ -25,7 +25,8 @@ const router = createRouter({
   ],
 })
 
-router.subscribe(({matchingRoute, data}) => {
+router.subscribe(({matchingRoute, navigationInProgress, data}) => {
+  loading.hidden = !navigationInProgress
   if (matchingRoute?.component) {
     while (root.firstChild) root.firstChild.remove()
     root.append(new matchingRoute.component(data))
