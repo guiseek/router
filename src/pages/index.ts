@@ -1,3 +1,3 @@
-export * from './products/component';
-export * from './contact/component';
-export * from './home/component';
+export * from './products/products'
+export * from './contact/contact'
+export * from './home/home'
